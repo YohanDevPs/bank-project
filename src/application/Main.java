@@ -4,7 +4,8 @@ package application;
 public class Main {
 
 	public static void main(String[] args) {
-Banco banco = new Banco();
+		
+		Banco banco = new Banco();
 		
 		Cliente venilton = new Cliente();
 		Cliente jerfesson = new Cliente();   
