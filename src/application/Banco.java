@@ -23,10 +23,11 @@ public class Banco {
 
 
 	protected void imprimirTodosClientes() {
+		System.out.println("======= Clientes do Banco ========");
 		for(Cliente ls : listaClientes) {
-			System.out.println(String.format("%s", ls.getNome()));
-			
+			System.out.println(String.format("%s", ls.getNome()));			
 		}
+		System.out.println("==================================");
 	}
 	
 }

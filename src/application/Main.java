@@ -7,30 +7,20 @@ public class Main {
 Banco banco = new Banco();
 		
 		Cliente venilton = new Cliente();
-		venilton.setNome("Venilton");
+		Cliente jerfesson = new Cliente();   
+		Cliente vanessa = new Cliente();
+		Cliente jussara = new Cliente();   
 		
-		Conta cc = new ContaCorrente(venilton);
-		Conta poupanca = new ContaPoupanca(venilton);
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		poupanca.sacar(200);
+		vanessa.setNome("Venilton");
+		jussara.setNome("Jussara");
+		jerfesson.setNome("Jerfesson");
+		venilton.setNome("venilton");
 		
+		
+		banco.addCliente(jerfesson);
 		banco.addCliente(venilton);
-		
-		Cliente Yohan = new Cliente();
-		Yohan.setNome("Yohan");
-		
-		Conta cc1 = new ContaCorrente(Yohan);
-		Conta poupanca1 = new ContaPoupanca(Yohan);
-		cc1.depositar(100);
-		cc1.transferir(100, poupanca1);
-		cc1.depositar(100);
-		cc1.transferir(100, poupanca1);
-		poupanca1.sacar(200);
-		
-		banco.addCliente(Yohan);
+		banco.addCliente(vanessa);
+		banco.addCliente(jussara);
 		
 		banco.imprimirTodosClientes();
 
