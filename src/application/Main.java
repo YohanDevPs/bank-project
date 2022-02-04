@@ -16,14 +16,11 @@ Banco banco = new Banco();
 		jerfesson.setNome("Jerfesson");
 		venilton.setNome("venilton");
 		
-		
 		banco.addCliente(jerfesson);
 		banco.addCliente(venilton);
 		banco.addCliente(vanessa);
 		banco.addCliente(jussara);
 		
 		banco.imprimirTodosClientes();
-
-
 	}
 }
